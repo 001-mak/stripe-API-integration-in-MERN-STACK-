@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../font.otf');
+}
+
+@font-face {
+  font-family: 'logofont';
+  src: url('../Rockybilly.ttf');
+}
+@font-face {
+  font-family: 'headingfont';
+  src: url('../steelfish\ bd.otf');
+}
+
+.App {
+  text-align: center;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.navbar{
+  width: 100vw;
+  height: 100px;
+  background-color: rgb(248, 248, 248);
+  /* padding: 25px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.navbar h1{
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'logofont';
+  font-size: 20px;
+  padding: 10px 0;
+  color: rgb(0, 0, 0);
+  font-weight: lighter;
+}
+
+.banner{
+  background-image: url(./banner.jpg);
+  width: 100%;
+  height: 640px;
+  overflow: hidden;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;background-color: black;
+  /* opacity: 20%; */
+  position: absolute;
+  top: 60px;
+  z-index: -100;
+}
+.overlay{
+  height: 640px;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  z-index: -50;
+  background-color: black;
+  overflow: hidden;
+  overflow-x: hidden;
+  opacity: 60%;
+}
+
+.banner-body h1{
+  /* padding: 0 10px; */
+  font-size: 120px;
+  color: white;
+  font-family: 'headingfont';
+}
+.banner-body h2{
+  font-size: 30px;
+  color: white;
+  font-family: 'headingfont';
+}
+
+.banner-body button{
+  padding: 20px 55px;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(14, 233, 185);
+  color: white;
+  cursor: pointer;
+}
+
+.banner-body button:hover{
+  background-color: rgb(65, 235, 198);
+
+}
